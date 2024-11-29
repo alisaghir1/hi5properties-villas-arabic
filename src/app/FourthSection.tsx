@@ -56,19 +56,19 @@ const FourthSection: React.FC = () => {
       <div className="flex flex-wrap gap-6 justify-center">
         {/* Image 1 */}
         <Image
-          className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 h-[300px] sm:h-[400px] rounded-lg transition-transform transform hover:scale-105"
+          className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 h-[300px] sm:h-[400px] rounded-lg transition-transform transform hover:opacity-80"
           src={a1}
           alt="amenities pic 1"
         />
         {/* Image 2 */}
         <Image
-          className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 h-[300px] sm:h-[400px] rounded-lg transition-transform transform hover:scale-105"
+          className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 h-[300px] sm:h-[400px] rounded-lg transition-transform transform hover:opacity-80"
           src={a2}
           alt="amenities pic 2"
         />
         {/* Image 3 */}
         <Image
-          className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 h-[300px] sm:h-[400px] rounded-lg transition-transform transform hover:scale-105"
+          className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3 h-[300px] sm:h-[400px] rounded-lg transition-transform transform hover:opacity-80"
           src={a3}
           alt="amenities pic 1"
         />
