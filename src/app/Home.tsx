@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import dubai from "./assets/interio2.png";
-import Typewriter from "typewriter-effect";
+import { ReactTyped } from "react-typed";
 
 const Home: React.FC = () => {
   return (
@@ -21,19 +21,16 @@ const Home: React.FC = () => {
       ابحث عن عقارك المثالي مع <span className="text-customText">هاي فايف</span>
         </h1>
         <div className="text-lg text-gray-300 mb-8 custom-font2">
-          <Typewriter
-            options={{
-              strings: [
+          <ReactTyped
+              strings={[
                 "اكتشف منزلك المثالي مع هاي فايف للعقارات، حيث يلتقي الفخامة بالراحة.",
                 "شريكك الموثوق في العقارات.",
                 "استكشف المنازل والشقق الفاخرة.",
                 "نجعل أحلامك العقارية حقيقة.",
                 "انضم إلينا لاستكشاف أفضل اختيار من العقارات التي تتناسب مع رؤيتك..",
-              ],
-              autoStart: true,
-              loop: true,
-              delay: 75,
-            }}
+              ]}
+              typeSpeed={40}
+              loop
           />
         </div>
         <a
