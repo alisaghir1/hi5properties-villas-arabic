@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "هاي فايف",
+  title: " هاي فايف للعقارات ",
   description:'اكتشف منزلك المثالي مع هاي فايف للعقارات، شريكك الموثوق في مجال العقارات. استكشف مجموعة واسعة من العقارات الفاخرة والشقق والمنازل المصممة لتلبية أسلوب حياتك. سواء كنت تشتري، أو تؤجر، أو تبيع، نحن نجعل رحلتك العقارية سلسة وخالية من الإجهاد.',
   icons: {
     icon: "/logo.svg", // Replace with the path to your logo image in the public folder
@@ -28,10 +28,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-        <head>
-      <link rel="preload" href="'./fonts/ElMessiri-VariableFont_wght.ttf" as="font" type="font/ttf" />
-      <link rel="preload" href="'./fonts/Merienda-VariableFont_wght.ttf" as="font" type="font/ttf" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
