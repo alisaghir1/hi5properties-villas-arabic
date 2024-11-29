@@ -28,9 +28,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <head>
-      <link rel="preload" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Merienda:wght@300..900&family=Noto+Kufi+Arabic:wght@100..900&display=swap" as="font" type="font-opentype"/>
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
