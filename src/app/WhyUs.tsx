@@ -5,7 +5,7 @@ const WhyUs: React.FC = () => {
     <section className="pb-40 bg-customText2 custom-font2">
       <div className="text-center px-2 mb-20 bg-customBg py-20">
         <h2 className="text-2xl font-bold text-white lg:text-3x pb-4 custom-font">
-        اكتشف لماذا تتميز هاي فايف للعقارات
+        اكتشف لماذا تتميز هاي فايف  بروبرتيز
         </h2>
       </div>
       <div className="">
@@ -13,7 +13,7 @@ const WhyUs: React.FC = () => {
           {/* Question 1 */}
           <div className="p-6 shadow-lg rounded-xl">
             <h2 className="text-2xl font-semibold text-customBg mb-4">
-            لماذا تختار هاي فايف للعقارات؟
+            لماذا تختار هاي فايف بروبرتيز؟
             </h2>
             <p className="text-gray-600">
             في هاي فايف للعقارات، نقدم فرص حصرية للمشروعات المستقبلية، محفظة عقارية متنوعة، وعقارات في مواقع مميزة. نحن موثوقون من قبل أبرز المطورين في الإمارات، مما يضمن أن استثمارك آمن ومربح.
@@ -33,7 +33,7 @@ const WhyUs: React.FC = () => {
           {/* Question 3 */}
           <div className="p-6 shadow-lg rounded-xl">
             <h2 className="text-2xl font-semibold text-customBg mb-4">
-            ما نوع العقارات التي تقدمها هاي فايف للعقارات؟
+            ما نوع العقارات التي تقدمها هاي فايف  بروبرتيز؟
             </h2>
             <p className="text-gray-600">
             تقدم هاي فايف للعقارات مجموعة واسعة من العقارات الفاخرة، بما في ذلك الشقق غير المكتملة، الفيلات، المنازل المتلاصقة، البنتهاوس، والقصور. نحن نحرص على أن يكون هناك ما يناسب كل أسلوب حياة وميزانية.
