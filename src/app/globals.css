@@ -4,10 +4,17 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Korcy';
-  src: url('./fonts/Korcy-Regular.ttf?v=1.0') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'El Messiri';
+  src: url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700') format('opentype');
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merienda';
+  src: url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900') format('opentype');
+  font-weight: 300 900;
+  font-display: swap;
 }
 
 body {
