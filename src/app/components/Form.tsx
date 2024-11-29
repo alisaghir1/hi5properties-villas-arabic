@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 
 interface FormData {
@@ -76,10 +75,10 @@ const Form: React.FC = () => {
         buySoon: "",
         purpose: "",
       });
-      setAlertMessage("Thanks for you interest! our team will contact you soon.");
+      setAlertMessage("شكراً لاهتمامك! سيتواصل معك فريقنا قريباً.");
       setShowAlert(true);
     } catch (error) {
-      setAlertMessage("FAILED! Something went wrong, please try again.");
+      setAlertMessage("فشل! حدث خطأ، يرجى المحاولة مرة أخرى.");
       setShowAlert(true);
       console.error("FAILED...", error);
     } finally {
@@ -87,29 +86,33 @@ const Form: React.FC = () => {
     }
   };
 
-  const handlePhoneChange = (value: string | undefined) => {
-    setFormData({ ...formData, phone: value || "" });
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    // Convert the input to Arabic numbers
+    const arabicNumerals = e.target.value.replace(/\d/g, (digit) =>
+      String.fromCharCode(1632 + parseInt(digit))
+    );
+    setFormData({ ...formData, phone: arabicNumerals });
   };
 
   return (
     <div id="Form" className="bg-customText2">
       <div className="flex justify-center items-center gap-12 w-100 pb-20 pt-20">
         <h2 className="text-2xl font-bold text-center text-customBg lg:text-3xl custom-font">
-          REGISTER YOUR INTEREST
+        سجل اهتمامك
         </h2>
       </div>
 
       <form
         ref={formRef}
         onSubmit={sendEmail}
-        className="max-w-4xl mx-auto pb-20 font-mono"
+        className="max-w-4xl mx-auto pb-20 custom-font2"
       >
         <div className="grid sm:grid-cols-2 gap-6">
           <div className="relative flex items-center">
             <input
               required
               type="text"
-              placeholder="FIRST NAME"
+              placeholder="الاسم الأول"
               value={formData.firstName}
               onChange={(e) =>
                 setFormData({ ...formData, firstName: e.target.value })
@@ -122,7 +125,7 @@ const Form: React.FC = () => {
             <input
               required
               type="text"
-              placeholder="LAST NAME"
+              placeholder="الاسم الأخير"
               value={formData.lastName}
               onChange={(e) =>
                 setFormData({ ...formData, lastName: e.target.value })
@@ -132,13 +135,14 @@ const Form: React.FC = () => {
           </div>
 
           <div className="relative flex items-center">
-            <PhoneInput
+          <input
               required
-              international
-              defaultCountry="AE"
-              value={formData.phone || undefined}
+              type="text"
+              placeholder="رقم الهاتف"
+              value={formData.phone}
               onChange={handlePhoneChange}
               className="px-2 py-6 bg-transparent text-black w-full text-lg border-b-2 border-customText focus:border-customBg outline-none"
+              dir="rtl" // Set input direction to RTL (for Arabic text)
             />
           </div>
 
@@ -146,7 +150,7 @@ const Form: React.FC = () => {
             <input
               required
               type="text"
-              placeholder="COUNTRY OF RESIDENCE"
+              placeholder="دولة الإقامة"
               value={formData.country}
               onChange={(e) =>
                 setFormData({ ...formData, country: e.target.value })
@@ -159,7 +163,7 @@ const Form: React.FC = () => {
             <input
               required
               type="email"
-              placeholder="EMAIL"
+              placeholder="البريد الإلكتروني"
               value={formData.email}
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
@@ -172,7 +176,7 @@ const Form: React.FC = () => {
             <input
               required
               type="text"
-              placeholder="NUMBER OF BEDROOMS"
+              placeholder="عدد غرف النوم المطلوبة"
               value={formData.bedrooms}
               onChange={(e) =>
                 setFormData({ ...formData, bedrooms: e.target.value })
@@ -185,7 +189,7 @@ const Form: React.FC = () => {
             <input
               required
               type="text"
-              placeholder="HOW SOON ARE YOU LOOKING TO BUY"
+              placeholder="ما مدى السرعة التي تتطلع بها للشراء؟"
               value={formData.buySoon}
               onChange={(e) =>
                 setFormData({ ...formData, buySoon: e.target.value })
@@ -198,7 +202,7 @@ const Form: React.FC = () => {
             <input
               required
               type="text"
-              placeholder="PURPOSE OF BUYING"
+              placeholder="غرض الشراء"
               value={formData.purpose}
               onChange={(e) =>
                 setFormData({ ...formData, purpose: e.target.value })
@@ -213,13 +217,11 @@ const Form: React.FC = () => {
               id="consent"
               checked={isChecked}
               onChange={handleCheckboxChange}
-              className="mr-2 w-8 h-8 bg-customBg"
+              className="ml-2 w-8 h-8 bg-customBg"
               required
             />
             <label htmlFor="consent" className="text-lg text-customBg">
-              By accepting and providing my personal information, I am
-              consenting to High Five Properties Privacy Policy, as well as the
-              applicable data protection laws.
+            بقبولي وتقديمي لمعلوماتي الشخصية، فإنني أوافق على سياسة الخصوصية لشركة هاي فايف للعقارات، بالإضافة إلى قوانين حماية البيانات المعمول بها.
             </label>
           </div>
         </div>
@@ -234,7 +236,7 @@ const Form: React.FC = () => {
               <div className="spinner"></div> {/* Spinner when loading */}
             </div>
           ) : (
-            "Submit"
+            "إرسال"
           )}
         </button>
       </form>
@@ -245,7 +247,7 @@ const Form: React.FC = () => {
           <div className="alert-box bg-customBg text-customText2">
             <p>{alertMessage}</p>
             <button onClick={() => setShowAlert(false)} className="alert-close">
-              Close
+            إغلاق
             </button>
           </div>
         </div>

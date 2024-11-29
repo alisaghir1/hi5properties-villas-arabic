@@ -12,13 +12,11 @@ const FirstSection: React.FC = () => {
         <div className="flex items-center justify-between gap-8 mb-10">
           <div className="flex items-center gap-12">
             <h2 className="text-2xl font-bold text-white lg:text-3x custom-font">
-              Our Property Gallery
+            اكتشف عقاراتنا
             </h2>
 
-            <p className="hidden max-w-screen-sm text-customText2 md:block font-mono">
-              Explore our curated selection of properties across different
-              categories. Whether you are looking for your dream home or
-              commercial space, we have something for every need.
+            <p className="hidden max-w-screen-sm text-customText2 md:block custom-font">
+            استكشف مجموعتنا المختارة من العقارات عبر فئات مختلفة. سواء كنت تبحث عن منزلك المثالي أو مساحة تجارية، لدينا شيء يناسب كل احتياج.
             </p>
           </div>
         </div>
@@ -34,8 +32,8 @@ const FirstSection: React.FC = () => {
 
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
 
-            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg font-mono">
-              Studio
+            <span className="relative mr-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg custom-font2">
+            استوديو
             </span>
           </div>
 
@@ -49,8 +47,8 @@ const FirstSection: React.FC = () => {
 
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
 
-            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg font-mono">
-              1 Bedroom
+            <span className="relative mr-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg custom-font2">
+            غرفة نوم واحدة
             </span>
           </div>
 
@@ -64,8 +62,8 @@ const FirstSection: React.FC = () => {
 
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
 
-            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg font-mono">
-              2 Bedrooms
+            <span className="relative mr-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg custom-font2">
+            غرفتا نوم
             </span>
           </div>
 
@@ -79,8 +77,8 @@ const FirstSection: React.FC = () => {
 
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50"></div>
 
-            <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg font-mono">
-              Town House
+            <span className="relative mr-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg custom-font2">
+            تاون هاوس
             </span>
           </div>
         </div>

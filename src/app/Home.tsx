@@ -18,17 +18,17 @@ const Home: React.FC = () => {
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center mx-2">
       <h1 className="text-5xl leading-tight mb-4 custom-font">
-          Find Your Perfect Property with <span className="text-customText">High Five</span>
+      ابحث عن عقارك المثالي مع <span className="text-customText">هاي فايف</span>
         </h1>
-        <div className="text-lg text-gray-300 mb-8 font-mono">
+        <div className="text-lg text-gray-300 mb-8 custom-font2">
           <Typewriter
             options={{
               strings: [
-                "Discover your dream home with High Five Properties, where luxury meets comfort",
-                "Your trusted partner in real estate.",
-                "Explore luxury homes and apartments.",
-                "Making your real estate dreams come true.",
-                "Join us in exploring the finest selection of real estate that matches your vision.",
+                "اكتشف منزلك المثالي مع هاي فايف للعقارات، حيث يلتقي الفخامة بالراحة.",
+                "شريكك الموثوق في العقارات.",
+                "استكشف المنازل والشقق الفاخرة.",
+                "نجعل أحلامك العقارية حقيقة.",
+                "انضم إلينا لاستكشاف أفضل اختيار من العقارات التي تتناسب مع رؤيتك..",
               ],
               autoStart: true,
               loop: true,
@@ -38,9 +38,9 @@ const Home: React.FC = () => {
         </div>
         <a
           href="#Form"
-          className="bg-customText font-mono text-white hover:bg-white hover:text-black py-2 px-6 rounded-md text-md md:text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          className="bg-customText custom-font2 text-white hover:bg-white hover:text-black py-2 px-6 rounded-md text-md md:text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
         >
-          Register Your Intereset
+          سجل اهتمامك
         </a>
       </div>
     </div>

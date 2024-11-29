@@ -2,10 +2,10 @@ import React from "react";
 
 const WhyUs: React.FC = () => {
   return (
-    <section className="pb-40 bg-customText2 font-mono">
+    <section className="pb-40 bg-customText2 custom-font2">
       <div className="text-center px-2 mb-20 bg-customBg py-20">
         <h2 className="text-2xl font-bold text-white lg:text-3x pb-4 custom-font">
-          Find Out Why High Five Properties Stands Out
+        اكتشف لماذا تتميز هاي فايف للعقارات
         </h2>
       </div>
       <div className="">
@@ -13,65 +13,50 @@ const WhyUs: React.FC = () => {
           {/* Question 1 */}
           <div className="p-6 shadow-lg rounded-xl">
             <h2 className="text-2xl font-semibold text-customBg mb-4">
-              Why Choose High Five Properties?
+            لماذا تختار هاي فايف للعقارات؟
             </h2>
             <p className="text-gray-600">
-              At High Five Properties, we offer exclusive off-plan
-              opportunities, a diverse property portfolio, and properties in
-              prime locations. We are trusted by leading developers in the UAE,
-              ensuring that your investment is secure and profitable.
+            في هاي فايف للعقارات، نقدم فرص حصرية للمشروعات المستقبلية، محفظة عقارية متنوعة، وعقارات في مواقع مميزة. نحن موثوقون من قبل أبرز المطورين في الإمارات، مما يضمن أن استثمارك آمن ومربح.
             </p>
           </div>
 
           {/* Question 2 */}
           <div className="p-6 shadow-lg rounded-xl">
             <h2 className="text-2xl font-semibold text-customBg mb-4">
-              What Are the Benefits of Investing in UAE Real Estate?
+            ما هي فوائد الاستثمار في العقارات في الإمارات؟
             </h2>
             <p className="text-gray-600">
-              Investing in UAE real estate offers numerous benefits, such as
-              tax-free investment returns, a booming market with high potential
-              for growth, and the possibility of securing long-term residency
-              through property ownership.
+            يقدم الاستثمار في العقارات في الإمارات العديد من الفوائد، مثل العوائد الاستثمارية المعفاة من الضرائب، وسوق مزدهر ذو إمكانات عالية للنمو، وإمكانية تأمين الإقامة طويلة الأجل من خلال ملكية العقار.
             </p>
           </div>
 
           {/* Question 3 */}
           <div className="p-6 shadow-lg rounded-xl">
             <h2 className="text-2xl font-semibold text-customBg mb-4">
-              What Kind of Properties Does High Five Properties Offer?
+            ما نوع العقارات التي تقدمها هاي فايف للعقارات؟
             </h2>
             <p className="text-gray-600">
-              High Five Properties provides a wide variety of luxury properties,
-              including off-plan apartments, villas, townhouses, penthouses, and
-              palaces. We ensure there is something for every lifestyle and
-              budget.
+            تقدم هاي فايف للعقارات مجموعة واسعة من العقارات الفاخرة، بما في ذلك الشقق غير المكتملة، الفيلات، المنازل المتلاصقة، البنتهاوس، والقصور. نحن نحرص على أن يكون هناك ما يناسب كل أسلوب حياة وميزانية.
             </p>
           </div>
 
           {/* Question 4 */}
           <div className="p-6 shadow-lg rounded-xl">
             <h2 className="text-2xl font-semibold text-customBg mb-4">
-              Where Are These Properties Located?
+            أين تقع هذه العقارات؟
             </h2>
             <p className="text-gray-600">
-              We specialize in properties located in Dubai most sought-after
-              neighborhoods, including Downtown Dubai, Dubai Marina, Palm
-              Jumeirah, Business Bay, and beyond. These areas offer incredible
-              amenities and are known for their prime location.
+            نحن متخصصون في العقارات الواقعة في أكثر الأحياء طلباً في دبي، بما في ذلك وسط مدينة دبي، مرسى دبي، نخلة جميرا، الخليج التجاري، وغيرها. تتميز هذه المناطق بالمرافق الرائعة وتقع في مواقع استراتيجية متميزة.
             </p>
           </div>
 
           {/* Question 5 */}
           <div className="p-6 shadow-lg rounded-xl">
             <h2 className="text-2xl font-semibold text-customBg mb-4">
-              Why Are We Trusted by Leading Developers?
+            لماذا نحن موثوقون من قبل المطورين الرائدين؟
             </h2>
             <p className="text-gray-600">
-              High Five Properties partners with the leading developers in the
-              UAE, ensuring you have access to high-quality properties that
-              promise excellent returns on investment. Our strong reputation is
-              built on trust, expertise, and successful partnerships.
+            تتعاون هاي فايف للعقارات مع المطورين الرائدين في الإمارات، مما يضمن لك الوصول إلى عقارات عالية الجودة تعد بعوائد ممتازة على الاستثمار. تم بناء سمعتنا القوية على الثقة والخبرة والشراكات الناجحة.
             </p>
           </div>
         </div>
