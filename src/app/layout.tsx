@@ -28,6 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
+        <head>
+      <link rel="preload" href="'./fonts/ElMessiri-VariableFont_wght.ttf" as="font" type="font/ttf" />
+      <link rel="preload" href="'./fonts/Merienda-VariableFont_wght.ttf" as="font" type="font/ttf" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
