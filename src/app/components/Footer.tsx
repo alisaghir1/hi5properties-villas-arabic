@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
       <div className="border-b border-gray-100"></div>
       <div className="container px-4 mx-auto">
         <p className="py-10 md:pb-20 text-md text-white font-medium text-center">
-        © 2024 هاي فايف  بروبرتيز. جميع الحقوق محفوظة.
+        © 2024 هاي فايف  للعقارات. جميع الحقوق محفوظة.
         </p>
       </div>
     </footer>
