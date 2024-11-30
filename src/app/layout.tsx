@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: " هاي فايف للعقارات ",
+  title: "عقارات دبي الفاخرة | شراء، تأجير، واستثمار في العقارات",
   description:'اكتشف منزلك المثالي مع هاي فايف للعقارات، شريكك الموثوق في مجال العقارات. استكشف مجموعة واسعة من العقارات الفاخرة والشقق والمنازل المصممة لتلبية أسلوب حياتك. سواء كنت تشتري، أو تؤجر، أو تبيع، نحن نجعل رحلتك العقارية سلسة وخالية من الإجهاد.',
   icons: {
     icon: "/logo.svg", // Replace with the path to your logo image in the public folder
