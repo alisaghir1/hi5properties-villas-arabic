@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import dubai from "./assets/interio2.png";
+import dubai from "./assets/home-villa.jpg";
 import { ReactTyped } from "react-typed";
 
 const Home: React.FC = () => {
@@ -18,7 +18,7 @@ const Home: React.FC = () => {
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center mx-2">
       <h1 className="text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 custom-font">
-      ابحث عن عقارك المثالي مع <span className="text-customText">هاي فايف</span>
+      احجز <span className="text-customText">فيلا</span> الخاصة بك بالتقسيط اليوم!
         </h1>
         <div className="text-lg text-gray-300 mb-8 custom-font2">
           <ReactTyped
